@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@model IEnumerable<EstateProject.Entities.City>
+
+@{
+    ViewBag.Title = "Listcity";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="container" style="margin-left:10px; margin-right:10px;">
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CityName)
+            </th>
+            <th>
+                Güncelle
+            </th>
+            <th>
+                Sil
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CityName, new { @class = "btnName" })
+                </td>
+                <td>
+
+                    @Html.ActionLink("Güncelle", "UpdateCity", new { id = item.CityId }, new { @class = "btn btn-success" })
+
+                </td>
+                <td>
+                    @Html.ActionLink("Sil", "DeleteCity", new { id = item.CityId }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek istediğinize emin misiniz?')" })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+    <br />
+    <hr />
+    @Html.ActionLink("Şehir Ekleme Sayfasına Git", "CreateCity")
+
+</div>
+@section scripts{
+    <script>
+        $(".btnDelete").click(function () {
+            var productId = $(this).attr("dataproductID");
+            $.ajax({
+                url: "/City/DeleteCity/" + productId,
+                type: "POST",
+                success: function (data) {
+                    if (data == "ok") {
+                        alert("Silme İşlemi Başarılı");
+                        window.location.reload();
+                    }
+                },
+                error: function (err) {
+                    alert("Hata Oluştu");
+                    console.log(err);
+                }
+            });
+        })
+    </script>
+
+}

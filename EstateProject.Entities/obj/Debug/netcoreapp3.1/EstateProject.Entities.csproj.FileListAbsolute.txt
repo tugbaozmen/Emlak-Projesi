@@ -1,0 +1,9 @@
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\bin\Debug\netcoreapp3.1\EstateProject.Entities.deps.json
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\bin\Debug\netcoreapp3.1\EstateProject.Entities.dll
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\bin\Debug\netcoreapp3.1\EstateProject.Entities.pdb
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\obj\Debug\netcoreapp3.1\EstateProject.Entities.csprojAssemblyReference.cache
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\obj\Debug\netcoreapp3.1\EstateProject.Entities.AssemblyInfoInputs.cache
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\obj\Debug\netcoreapp3.1\EstateProject.Entities.AssemblyInfo.cs
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\obj\Debug\netcoreapp3.1\EstateProject.Entities.csproj.CoreCompileInputs.cache
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\obj\Debug\netcoreapp3.1\EstateProject.Entities.dll
+C:\Users\tugba\source\repos\EstateProject\EstateProject.Entities\obj\Debug\netcoreapp3.1\EstateProject.Entities.pdb

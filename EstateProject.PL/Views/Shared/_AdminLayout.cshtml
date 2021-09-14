@@ -1,0 +1,120 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emlak Yönetimi</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/all.min.css" rel="stylesheet" />
+    <!-- overlayScrollbars -->
+    <link href="~/css/OverlayScrollbars.min.css" rel="stylesheet" />
+    <!-- Theme style -->
+    <link href="~/css/adminlte.min.css" rel="stylesheet" />
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        @*<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="info">
+                <a href="/User/ListUser" class="d-block">Tuğba ÖZMEN</a>
+            </div>
+        </div>*@
+        <br />
+
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-1">
+            <ul class="nav nav-pills nav-sidebar " data-widget="treeview" role="menu" data-accordion="false" style="margin-left:10px; background-color:lightblue">
+                <!-- Add icons to the links using the .nav-icon class
+            with font-awesome or any other icon font library -->
+
+                <li class="nav-item menu-close">
+                    <a href="/WorkPlace/CreateWorkPlace" class="nav-link ">
+                        <p>
+                            İş Yeri Yönetimi
+                        </p>
+                    </a>
+                    @*<ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/WorkPlace/CreateWorkPlace">
+                                <p>&nbsp;>&nbsp;> İş Yeri Tanımla</p>
+                            </a>
+                        </li>
+                    </ul>*@
+                </li>
+                <li class="nav-item menu-close">
+                    <a href="/User/CreateUser" class="nav-link ">
+                        <p>
+                            Kullanıcı Yönetimi
+                        </p>
+                    </a>
+                    @*<ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/User/CreateUser">
+                                <p>&nbsp;>&nbsp;> Kullanıcı Tanımla</p>
+                            </a>
+                        </li>
+                    </ul>*@
+                </li>
+                <li class="nav-item menu-close">
+                    <a href="/Estate/CreateEstate" class="nav-link ">
+                        <p>
+                            Emlak Yönetimi
+                        </p>
+                    </a>
+                    @*<ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/Estate/CreateEstate">
+                                <p>&nbsp;>&nbsp;> Emlakçı Tanımla</p>
+                            </a>
+                        </li>
+                    </ul>*@
+                </li>
+
+        </nav>
+
+        <!-- /.sidebar-menu -->
+    </div>
+    @RenderBody()
+    <!-- /.sidebar -->
+    </aside>
+
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2021 - Tuğba ÖZMEN</a></strong>
+    </footer>
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="~/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="~/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/js/adminlte.js"></script>
+
+    <!-- PAGE PLUGINS -->
+    <!-- jQuery Mapael -->
+    <script src="~/js/jquery.mousewheel.js"></script>
+    <script src="~/js/raphael.min.js"></script>
+    <script src="~/js/jquery.mapael.min.js"></script>
+    <script src="~/js/usa_states.min.js"></script>
+    <!-- ChartJS -->
+    <script src="~/js/Chart.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="~/js/dashboard2.js"></script>
+
+    @RenderSection("scripts", false)
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model EstateProject.PL.Models.CityCountyViewModel
+
+@{
+    ViewBag.Title = "CreateCounty";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("CreateCounty", "County", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal" style="margin-left:10px;">
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.CityName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-5">
+            @Html.DropDownListFor(a => a.CityId, (IEnumerable<SelectListItem>)ViewBag.City, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.CityId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CountyName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-5">
+            @Html.EditorFor(model => model.CountyName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CountyName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Oluştur" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<div style="margin-left:10px;">
+    @Html.ActionLink("<< Listeye Geri Dön >>", "ListCounty")
+</div>
+
+@if (ViewBag.IsSuccess != null)
+{
+    if (ViewBag.IsSuccess)
+    {
+        <span class="alert-info">Kayıt başarılı</span>
+        <br />
+    }
+    else
+    {
+        <span class="alert-danger">Kayıt işlemi başarısız</span>
+    }
+}

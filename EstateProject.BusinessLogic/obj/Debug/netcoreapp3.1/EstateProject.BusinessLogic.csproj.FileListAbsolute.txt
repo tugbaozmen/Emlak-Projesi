@@ -1,0 +1,17 @@
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.DataAccess.dll
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.Entities.dll
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.Entities.pdb
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.AssemblyInfo.cs
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.BusinessLogic.deps.json
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.BusinessLogic.runtimeconfig.json
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.BusinessLogic.runtimeconfig.dev.json
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.BusinessLogic.dll
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.BusinessLogic.pdb
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\bin\Debug\netcoreapp3.1\EstateProject.DataAccess.pdb
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.csproj.CopyComplete
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.dll
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.pdb
+C:\Users\tugba\source\repos\EstateProject\EstateProject.BusinessLogic\obj\Debug\netcoreapp3.1\EstateProject.BusinessLogic.genruntimeconfig.cache

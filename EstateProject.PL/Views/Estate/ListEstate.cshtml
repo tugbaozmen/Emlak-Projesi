@@ -1,0 +1,142 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+@model IEnumerable<EstateProject.Entities.Estate>
+
+@{
+    ViewBag.Title = "ListEstate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="container" style="margin-left:10px; margin-right:10px;">
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EstateName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfBalcony)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfBathromm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfFloor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfRoom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfToilet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FloorStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Front)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WarmStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstateStatus)
+            </th>
+            <th>
+                Güncelle
+            </th>
+            <th>
+                Sil
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstateName, new { @class = "btnName" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfBalcony, new { @class = "btnName" })
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfBathromm, new { @class = "btnName" })
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfFloor, new { @class = "btnName" })
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfRoom, new { @class = "btnName" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfToilet, new { @class = "btnName" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FloorStatus, new { @class = "btnName" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price, new { @class = "btnName" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Front, new { @class = "btnName" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WarmStatus, new { @class = "btnName" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstateStatus, new { @class = "btnName" })
+        </td>
+        <td>
+
+            @Html.ActionLink("Güncelle", "UpdateEstate", new { id = item.UserId }, new { @class = "btn btn-success" })
+
+        </td>
+        <td>
+            @Html.ActionLink("Sil", "DeleteEstate", new { id = item.UserId }, new { @class = "btn btn-danger", onclick = "return confirm('Gerçekten silmek istiyor musunuz?')" })
+        </td>
+    </tr>
+        }
+
+    </table>
+
+
+    <br />
+    <hr />
+    @Html.ActionLink("<< Emlakçı Ekleme Sayfasına Git >>", "CreateEstate")
+
+</div>
+@section scripts{
+    <script>
+        $(".btnDelete").click(function () {
+            var productId = $(this).attr("dataproductID");
+            $.ajax({
+                url: "/Estate/DeleteEstate/" + productId,
+                type: "POST",
+                success: function (data) {
+                    if (data == "ok") {
+                        alert("Silme İşlemi Başarılı");
+                        window.location.reload();
+                    }
+                },
+                error: function (err) {
+                    alert("Hata Oluştu");
+                    console.log(err);
+                }
+            });
+        })
+    </script>
+
+}
